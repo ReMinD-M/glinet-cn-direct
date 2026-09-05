@@ -6,13 +6,13 @@
   },
   "full": {
     "ipv4_networks": 5502,
-    "domains": 5882,
-    "total_lines": 11384
+    "domains": 5571,
+    "total_lines": 11073
   },
   "lite": {
     "ipv4_networks": 5503,
-    "domains": 2498,
-    "total_lines": 8001
+    "domains": 2462,
+    "total_lines": 7965
   },
   "notes": [
     "IPv6 is not included because GL.iNet's documented online VPN filter format explicitly lists IPv4/CIDR and domains.",
