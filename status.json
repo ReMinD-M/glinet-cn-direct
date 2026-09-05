@@ -1,22 +1,41 @@
 {
+  "profile": "V3 ChinaMax / GL.iNet MAX",
   "sources": {
-    "chnroute": "https://raw.githubusercontent.com/mayaxcn/china-ip-list/master/chnroute.txt",
-    "china": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/China/China.list",
-    "tencent": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Tencent/Tencent.list"
+    "chinamax": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax.list",
+    "chnroute": "https://raw.githubusercontent.com/mayaxcn/china-ip-list/master/chnroute.txt"
+  },
+  "source_stats": {
+    "domain": 257,
+    "domain_suffix": 101531,
+    "domain_keyword_ignored": 13,
+    "ipv4": 8245,
+    "ipv6_ignored": 4212,
+    "ip_asn_ignored": 1,
+    "process_ignored": 14,
+    "invalid_or_unsupported": 9494
   },
   "full": {
-    "ipv4_networks": 5502,
-    "domains": 5571,
-    "total_lines": 11073
+    "ipv4_networks": 8252,
+    "domains": 101794,
+    "total_lines": 110046,
+    "purpose": "MAX coverage: mainland IP + mainstream Chinese apps/video/games/cloud/CDN"
   },
   "lite": {
-    "ipv4_networks": 5503,
-    "domains": 2462,
-    "total_lines": 7965
+    "ipv4_networks": 5494,
+    "domains": 89,
+    "total_lines": 5583,
+    "purpose": "fallback only"
   },
-  "notes": [
-    "IPv6 is not included because GL.iNet's documented online VPN filter format explicitly lists IPv4/CIDR and domains.",
-    "DOMAIN-KEYWORD rules are ignored because GL.iNet does not use Clash keyword syntax.",
-    "Subdomains are collapsed when a parent/root domain is already present."
+  "compatibility": {
+    "numeric_prefix_domains": "excluded because GL.iNet reports them invalid",
+    "domain_keyword": "ignored; GL.iNet URL list has no Clash keyword semantics",
+    "ipv6": "ignored in this file",
+    "ip_asn": "ignored",
+    "process_name": "ignored"
+  },
+  "important": [
+    "ChinaMax is intentionally used as the main source instead of stacking many duplicate domestic rule sets.",
+    "ChinaMax excludes major overseas categories such as TikTok, YouTube and Steam from its domestic aggregate.",
+    "No domain/IP list can guarantee every proprietary game or app flow when an app uses hard-coded IPs, private DoH, or new CDN nodes."
   ]
 }
