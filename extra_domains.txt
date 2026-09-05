@@ -1,0 +1,16 @@
+# 每行一个根域名。update.py 会自动与上游列表合并并去重。
+# 这里特意补一些微信/视频号常见根域；很多也已包含在 Tencent 规则里，重复无害。
+qq.com
+weixin.com
+wechat.com
+servicewechat.com
+qpic.cn
+qlogo.cn
+gtimg.com
+tencent.com
+qcloud.com
+myqcloud.com
+tencent-cloud.com
+tencent-cloud.net
+weixinbridge.com
+wxqcloud.qq.com
