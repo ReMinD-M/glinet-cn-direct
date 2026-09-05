@@ -1,1 +1,22 @@
-{"status":"Run GitHub Action once to generate the full lists."}
+{
+  "sources": {
+    "chnroute": "https://raw.githubusercontent.com/mayaxcn/china-ip-list/master/chnroute.txt",
+    "china": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/China/China.list",
+    "tencent": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Tencent/Tencent.list"
+  },
+  "full": {
+    "ipv4_networks": 5502,
+    "domains": 5882,
+    "total_lines": 11384
+  },
+  "lite": {
+    "ipv4_networks": 5503,
+    "domains": 2498,
+    "total_lines": 8001
+  },
+  "notes": [
+    "IPv6 is not included because GL.iNet's documented online VPN filter format explicitly lists IPv4/CIDR and domains.",
+    "DOMAIN-KEYWORD rules are ignored because GL.iNet does not use Clash keyword syntax.",
+    "Subdomains are collapsed when a parent/root domain is already present."
+  ]
+}
