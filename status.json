@@ -1,41 +1,179 @@
 {
-  "profile": "V3 ChinaMax / GL.iNet MAX",
-  "sources": {
-    "chinamax": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax.list",
-    "chnroute": "https://raw.githubusercontent.com/mayaxcn/china-ip-list/master/chnroute.txt"
+  "profile": "V4 Balanced",
+  "goal": "Mainland China IP + mainstream Chinese apps/video/social/ecommerce/cloud/games without ChinaMax-scale bloat",
+  "critical_sources": {
+    "chnroute": "https://raw.githubusercontent.com/mayaxcn/china-ip-list/master/chnroute.txt",
+    "china": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/China/China.list",
+    "tencent": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Tencent/Tencent.list"
   },
+  "optional_sources": {
+    "douyin": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/DouYin/DouYin.list",
+    "bytedance": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/ByteDance.list",
+    "kuaishou": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/KuaiShou/KuaiShou.list",
+    "bilibili": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BiliBili/BiliBili.list",
+    "iqiyi": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/iQIYI/iQIYI.list",
+    "youku": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Youku/Youku.list",
+    "huya": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HuYa/HuYa.list",
+    "netease": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/NetEase/NetEase.list",
+    "baidu": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Baidu/Baidu.list",
+    "jingdong": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/JingDong/JingDong.list",
+    "pinduoduo": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Pinduoduo/Pinduoduo.list",
+    "weibo": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Weibo/Weibo.list",
+    "zhihu": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Zhihu/Zhihu.list"
+  },
+  "optional_failures": {},
   "source_stats": {
-    "domain": 257,
-    "domain_suffix": 101531,
-    "domain_keyword_ignored": 13,
-    "ipv4": 8245,
-    "ipv6_ignored": 4212,
-    "ip_asn_ignored": 1,
-    "process_ignored": 14,
-    "invalid_or_unsupported": 9494
+    "china": {
+      "domain": 3413,
+      "ipv4": 17,
+      "ignored": 13,
+      "invalid": 278
+    },
+    "tencent": {
+      "domain": 2462,
+      "ipv4": 20,
+      "ignored": 0,
+      "invalid": 36
+    },
+    "douyin": {
+      "domain": 13,
+      "ipv4": 0,
+      "ignored": 0,
+      "invalid": 0,
+      "unique_domains_loaded": 13,
+      "unique_ipv4_loaded": 0
+    },
+    "bytedance": {
+      "domain": 44,
+      "ipv4": 0,
+      "ignored": 0,
+      "invalid": 0,
+      "unique_domains_loaded": 44,
+      "unique_ipv4_loaded": 0
+    },
+    "kuaishou": {
+      "domain": 566,
+      "ipv4": 0,
+      "ignored": 0,
+      "invalid": 112,
+      "unique_domains_loaded": 566,
+      "unique_ipv4_loaded": 0
+    },
+    "bilibili": {
+      "domain": 66,
+      "ipv4": 8,
+      "ignored": 6,
+      "invalid": 49,
+      "unique_domains_loaded": 66,
+      "unique_ipv4_loaded": 8
+    },
+    "iqiyi": {
+      "domain": 30,
+      "ipv4": 21,
+      "ignored": 2,
+      "invalid": 4,
+      "unique_domains_loaded": 30,
+      "unique_ipv4_loaded": 21
+    },
+    "youku": {
+      "domain": 29,
+      "ipv4": 1,
+      "ignored": 0,
+      "invalid": 5,
+      "unique_domains_loaded": 29,
+      "unique_ipv4_loaded": 1
+    },
+    "huya": {
+      "domain": 4,
+      "ipv4": 0,
+      "ignored": 0,
+      "invalid": 0,
+      "unique_domains_loaded": 4,
+      "unique_ipv4_loaded": 0
+    },
+    "netease": {
+      "domain": 84,
+      "ipv4": 28,
+      "ignored": 0,
+      "invalid": 34,
+      "unique_domains_loaded": 84,
+      "unique_ipv4_loaded": 28
+    },
+    "baidu": {
+      "domain": 246,
+      "ipv4": 0,
+      "ignored": 0,
+      "invalid": 5,
+      "unique_domains_loaded": 246,
+      "unique_ipv4_loaded": 0
+    },
+    "jingdong": {
+      "domain": 239,
+      "ipv4": 0,
+      "ignored": 0,
+      "invalid": 10,
+      "unique_domains_loaded": 239,
+      "unique_ipv4_loaded": 0
+    },
+    "pinduoduo": {
+      "domain": 3,
+      "ipv4": 0,
+      "ignored": 0,
+      "invalid": 0,
+      "unique_domains_loaded": 3,
+      "unique_ipv4_loaded": 0
+    },
+    "weibo": {
+      "domain": 3,
+      "ipv4": 0,
+      "ignored": 1,
+      "invalid": 0,
+      "unique_domains_loaded": 3,
+      "unique_ipv4_loaded": 0
+    },
+    "zhihu": {
+      "domain": 2,
+      "ipv4": 4,
+      "ignored": 1,
+      "invalid": 0,
+      "unique_domains_loaded": 2,
+      "unique_ipv4_loaded": 4
+    }
   },
   "full": {
-    "ipv4_networks": 8252,
-    "domains": 101794,
-    "total_lines": 110046,
-    "purpose": "MAX coverage: mainland IP + mainstream Chinese apps/video/games/cloud/CDN"
+    "ipv4_networks": 5519,
+    "domains": 6532,
+    "total_lines": 12051,
+    "safety_cap": 30000
   },
   "lite": {
-    "ipv4_networks": 5494,
-    "domains": 89,
-    "total_lines": 5583,
-    "purpose": "fallback only"
+    "ipv4_networks": 5503,
+    "domains": 2581,
+    "total_lines": 8084
   },
   "compatibility": {
-    "numeric_prefix_domains": "excluded because GL.iNet reports them invalid",
-    "domain_keyword": "ignored; GL.iNet URL list has no Clash keyword semantics",
-    "ipv6": "ignored in this file",
-    "ip_asn": "ignored",
-    "process_name": "ignored"
+    "numeric_prefix_domains": "excluded for GL.iNet compatibility",
+    "domain_keyword": "ignored",
+    "ipv6": "ignored in this GL.iNet URL list",
+    "process_name": "ignored",
+    "overseas_suffixes": [
+      "byteoversea.com",
+      "epicgames.com",
+      "googlevideo.com",
+      "hoyoverse.com",
+      "netflix.com",
+      "steamcommunity.com",
+      "steampowered.com",
+      "tiktok.com",
+      "tiktokcdn.com",
+      "tiktokv.com",
+      "youtube.com"
+    ]
   },
-  "important": [
-    "ChinaMax is intentionally used as the main source instead of stacking many duplicate domestic rule sets.",
-    "ChinaMax excludes major overseas categories such as TikTok, YouTube and Steam from its domestic aggregate.",
-    "No domain/IP list can guarantee every proprietary game or app flow when an app uses hard-coded IPs, private DoH, or new CDN nodes."
+  "notes": [
+    "This profile intentionally avoids ChinaMax's 100k+ domain scale.",
+    "Optional service feeds are fault-tolerant: one unavailable source will not stop the daily build.",
+    "Root domains are collapsed so subdomain-heavy feeds use fewer GL.iNet rules.",
+    "No static list can guarantee every app/game flow if it uses hard-coded IPs, private DoH, or new CDN nodes."
   ]
 }
