@@ -29,6 +29,11 @@ def clean_domain(s: str) -> str | None:
     s = s.strip().lower().rstrip(".").lstrip(".")
     if not s or " " in s or "/" in s:
         return None
+
+    # GL.iNet VPN Dashboard rejects domains beginning with a digit.
+    if not s[0].isalpha():
+        return None
+
     return s if DOMAIN_RE.fullmatch(s) else None
 
 def parse_ip_lines(text: str) -> set[ipaddress.IPv4Network]:
