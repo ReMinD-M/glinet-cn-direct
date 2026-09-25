@@ -141,15 +141,15 @@
     }
   },
   "full": {
-    "ipv4_networks": 5518,
+    "ipv4_networks": 5519,
     "domains": 6532,
-    "total_lines": 12050,
+    "total_lines": 12051,
     "safety_cap": 30000
   },
   "lite": {
-    "ipv4_networks": 5502,
+    "ipv4_networks": 5503,
     "domains": 2581,
-    "total_lines": 8083
+    "total_lines": 8084
   },
   "compatibility": {
     "numeric_prefix_domains": "excluded for GL.iNet compatibility",
